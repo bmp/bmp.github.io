@@ -1,0 +1,4 @@
+* README
+Creating an org-site from scratch
+* Current State
+Redirecting to the current static page
