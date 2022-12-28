@@ -1,11 +1,20 @@
 * README
 Creating an org-site from scratch
-* Current State
+* Change log
+** 28th December 2022
+Functional landing page
+** 25th December 2022
 Redirecting to the current static page
 * Tasks
 ** Org-mode site
-- [ ] Header
-- [ ] Footer
+- [X] Header
+- [X] Footer
 - [ ] RSS Feeds
-** Landing Page
-** Media mentions
+** DONE Landing Page
+CLOSED: [2022-12-28 Wed 18:12]
+** Pages
+***  Media mentions
+*** Poetry by postcards
+** Logos
+- [ ] Check logos for social
+- [ ] Check favicon
