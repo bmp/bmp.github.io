@@ -15,7 +15,7 @@
       org-html-postamble "<footer>
 <a title=\"Twitter\" href=\"https://twitter.com/bharathmp\" target=\"_blank\"><img src=\"img/twitter.svg\" width=\"18px\" alt=\"Twitter\"></a>&nbsp;&nbsp;&nbsp;
 <a title=\"LinkedIn\" href=\"https://www.linkedin.com/in/bharathmp/\" target=\"_blank\"><img src=\"img/linkedin.svg\" width=\"20px\" alt=\"LinkedIn\"></a>&nbsp;&nbsp;&nbsp;
-<a title=\"Mastodon\" href=\"https://mastodon.sdf.org/@bmp\" target=\"_blank\"><img src=\"img/mastodon.svg\" width=\"17px\" alt=\"Mastodon\"></a>&nbsp;&nbsp;&nbsp;
+<a title=\"Mastodon\" rel=\"me\" href=\"https://mastodon.sdf.org/@bmp\" target=\"_blank\"><img src=\"img/mastodon.svg\" width=\"17px\" alt=\"Mastodon\"></a>&nbsp;&nbsp;&nbsp;
 <a title=\"XMPP\" href=\"xmpp:bmp@jabb3r.org\" target=\"_blank\"><img src=\"img/xmpp.svg\" width=\"18px\" alt=\"XMPP\"></a>&nbsp;&nbsp;&nbsp;
 <a title=\"Email\" href=\"\" target=\"_blank\"><img src=\"img/mail.svg\" width=\"20px\" alt=\"Email\"></a>
 <br>
