@@ -42,7 +42,7 @@ Made with %c
 	      ("content"
 	       :base-directory "./content/"
 	       :base-extension "org"
-	       :publishing-directory "./public/"
+	       :publishing-directory "../"
 	       :recursive nil
 	       :publishing-function org-html-publish-to-html
 	       :auto-preamble nil
@@ -63,7 +63,7 @@ Made with %c
 	      ("static"
 	       :base-directory "./static/"
 	       :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|txt\\|svg"
-	       :publishing-directory "./public/"
+	       :publishing-directory "../"
 	       :recursive t
 	       :publishing-function org-publish-attachment
 	       )
