@@ -46,7 +46,7 @@ html {
     --column-width: 67ch;
     --form-width: 50ch;
     --line-width: 0.125rem;
-    --line-height: 2;
+    --line-height: 1.75;
 
     --one-line: calc(var(--line-height) * 1rem);
     --half-line: calc(var(--one-line) * 0.5);
@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, hr, footer, header, nav, figure, figcapti
 /* Headings */
 
 header {
-    margin-bottom: calc(var(--line-height) * 1rem);
+    margin-bottom: calc(var(--line-height) * 3.5rem);
 }
 
 header a {
@@ -164,7 +164,7 @@ h1, h2 {
 h1.title {
     text-align: left;
     font-size: 3.5rem;
-    color:
+    color: black;
 }
 
 h3, h4, h5, h6 {

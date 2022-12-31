@@ -20,6 +20,5 @@ Games as Research Tools, and Data in Public Policy.
 
 I send out [[file:poemsbypost.org][Poems by Post]], collect fountain pens and occasionally
 sketch (which I share on [[https://pixelfed.sdf.org/bmp][PixelFed]] & [[https://www.instagram.com/bharath.palavalli/][Instagram]]), read SFF, try to speak
-Esperanto and, am awaiting my amateur radio license.
-
-My validated keys are available on [[https://keyoxide.org/6304cb5495afcc2dad3daed77b0c0889dc58c208][KeyOxide]].
+Esperanto, and am awaiting my amateur radio license. My validated keys
+are available on [[https://keyoxide.org/6304cb5495afcc2dad3daed77b0c0889dc58c208][KeyOxide]].
