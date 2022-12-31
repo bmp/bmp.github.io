@@ -7,18 +7,19 @@
 
 
 I research and design tools to help make better public policy. I use
-the complex adaptive system lens in my work across a number of areas
-ranging from inequality, transport, energy, disaster management and urban
-planning to social protection.
+a complex adaptive system lens across a number of areas ranging from
+inequality, transport, energy, disaster management and urban planning
+to social protection.
 
 I am the Co-Founder of [[https://www.fieldsofview.in][Fields of View]], a non-profit research group in
 Bangalore. In 2018, I was elected as an [[https://bit.ly/bmpashoka][Ashoka Fellow]] for my work in
 designing tools and methods to allow different stakeholders to
-collaborate on creating relevant public policy. I teach courses based
+collaboratively create public policy. I teach courses based
 on request, in the areas of Tools for Participation in Public Policy,
 Games as Research Tools, and Data in Public Policy.
 
-# I send out Poems on Postcards, collect fountain pens, speak
-# Esperanto and am awaiting my amateur radio license.
+I send out [[file:poemsbypost.org][Poems by Post]], collect fountain pens and occasionally
+sketch (which I share on [[https://pixelfed.sdf.org/bmp][PixelFed]] & [[https://www.instagram.com/bharath.palavalli/][Instagram]]), read SFF, try to speak
+Esperanto and, am awaiting my amateur radio license.
 
 My validated keys are available on [[https://keyoxide.org/6304cb5495afcc2dad3daed77b0c0889dc58c208][KeyOxide]].

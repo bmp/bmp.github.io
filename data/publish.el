@@ -6,6 +6,21 @@
 
 (require 'ox-publish)
 
+
+;; Open external links in new tab
+(defun my-org-export-add-target-blank-to-http-links (text backend info)
+  "Add target=\"_blank\" to external links."
+  (when (and
+         (org-export-derived-backend-p backend 'html)
+         (string-match "href=\"http[^\"]+" text)
+         (not (string-match "target=\"" text)))
+    (string-match "<a " text)
+    (replace-match "<a target=\"_blank\" " nil nil text)))
+
+(add-to-list 'org-export-filter-link-functions
+             'my-org-export-add-target-blank-to-http-links)
+
+
 ;; Customize the HTML output
 (setq org-html-validation-link nil            ;; Don't show validation link
       org-html-head-include-scripts nil       ;; Use our own scripts
@@ -13,13 +28,17 @@
       org-html-doctype "html5"
       org-html-html5-fancy t
       org-html-postamble "<footer>
-<a title=\"Twitter\" href=\"https://twitter.com/bharathmp\" target=\"_blank\"><img src=\"img/twitter.svg\" style=\"width:18px;\" alt=\"Twitter\"></a>&nbsp;&nbsp;&nbsp;
-<a title=\"LinkedIn\" href=\"https://www.linkedin.com/in/bharathmp/\" target=\"_blank\"><img src=\"img/linkedin.svg\" style=\"width:20px;\" alt=\"LinkedIn\"></a>&nbsp;&nbsp;&nbsp;
-<a title=\"Mastodon\" rel=\"me\" href=\"https://mastodon.sdf.org/@bmp\" target=\"_blank\"><img src=\"img/mastodon.svg\" style=\"width:17px;\" alt=\"Mastodon\"></a>&nbsp;&nbsp;&nbsp;
-<a title=\"XMPP\" href=\"xmpp:bmp@jabb3r.org\" target=\"_blank\"><img src=\"img/xmpp.svg\" style=\"width:18px;\" alt=\"XMPP\"></a>&nbsp;&nbsp;&nbsp;
-<a title=\"Email\" href=\"\" target=\"_blank\"><img src=\"img/mail.svg\" style=\"width:20px;\" alt=\"Email\"></a>
+<a title=\"Twitter\" href=\"https://twitter.com/bharathmp\" target=\"_blank\"><img class=\"logo-img\" src=\"img/twitter.svg\" style=\"width:18px;\" alt=\"Twitter\"></a>&nbsp;&nbsp;&nbsp;
+<a title=\"LinkedIn\" href=\"https://www.linkedin.com/in/bharathmp/\" target=\"_blank\"><img class=\"logo-img\" src=\"img/linkedin.svg\" style=\"width:20px;\" alt=\"LinkedIn\"></a>&nbsp;&nbsp;&nbsp;
+<a title=\"Mastodon\" rel=\"me\" href=\"https://mastodon.sdf.org/@bmp\" target=\"_blank\"><img class=\"logo-img\" src=\"img/mastodon.svg\" style=\"width:17px;\" alt=\"Mastodon\"></a>&nbsp;&nbsp;&nbsp;
+<a title=\"XMPP\" href=\"xmpp:bmp@jabb3r.org\" target=\"_blank\"><img class=\"logo-img\" src=\"img/xmpp.svg\" style=\"width:18px;\" alt=\"XMPP\"></a>&nbsp;&nbsp;&nbsp;
+<a title=\"Email\" href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#105;&#108;&#64;&#98;&#104;&#97;&#114;&#97;&#116;&#104;&#112;&#97;&#108;&#97;&#118;&#97;&#108;&#108;&#105;&#46;&#99;&#111;&#109;\" target=\"_blank\"><img class=\"logo-img\" src=\"img/mail.svg\" style=\"width:20px;\" alt=\"Email\"></a>
 <br>
-Made with %c
+<div class=\"generator\">
+<a href=\"https://validator.w3.org/nu/?doc=https://www.bharathpalavalli.com/\">HTML5</a> | <a href=\"https://www.gnu.org/software/emacs/\">Emacs</a> <a href=\"https://orgmode.org\">Org Mode</a> | <a href=\"https://www.bharathpalavalli.com/humans.txt\">Humans.txt</a>
+<br>
+© 2009-2022 Bharath M. Palavalli. Some rights reserved.
+</div>
 </footer>"
       org-export-with-footnotes t
       org-export-date-timestamp-format "%d %B %Y"
@@ -50,13 +69,13 @@ Made with %c
 	       :with-toc nil
 	       :author "Bharath M. Palavalli"
 	       :email "bmp@sdf.org"
-	       :html-head "<link rel=\"stylesheet\" href=\"css/style.css\">
+	       :html-head "<link rel=\"stylesheet\" href=\"css/style.min.css\">
 <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"img/apple-touch-icon.png\">
 <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"img/favicon-32x32.png\">
 <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"img/favicon-16x16.png\">"
 	       :html-preamble "<header>
 <h1>
-<a href=\"../index.html\">Bharath M. Palavalli</a>
+<a href=\"./index.html\">Bharath M. Palavalli</a>
 </h1>
 </header>"
 	       )

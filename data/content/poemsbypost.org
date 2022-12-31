@@ -1,0 +1,14 @@
+#+TITLE: Poems by Post
+#+OPTIONS:
+#+META_TYPE: website
+#+DESCRIPTION: Bharath M. Palavalli's Personal Website
+
+#+ATTR_HTML: :class sitemap
+
+If you are interested in receiving a poem every fortnight on a
+postcard, please do send me an [[mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#105;&#108;&#64;&#98;&#104;&#97;&#114;&#97;&#116;&#104;&#112;&#97;&#108;&#97;&#118;&#97;&#108;&#108;&#105;&#46;&#99;&#111;&#109;][e-mail]] or get in touch with me over
+social media with your postal address and you will receive one.
+
+#+CAPTION: Indian Postcard
+#+ATTR_HTML: :alt Image of a postcard image :title Poscard! :align center :width 50%
+[[./img/postcard.png]]
