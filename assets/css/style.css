@@ -1,4 +1,4 @@
-/*EB Garamond*/
+ /*EB Garamond*/
 
 @font-face {
   font-family: "EB Garamond";
@@ -21,6 +21,7 @@
 html, html[data-font-family="serif"] {
     --font-family: "EB Garamond";
 }
+
 html[data-font-family="sans-serif"] {
     --font-family: sans-serif;
 }
