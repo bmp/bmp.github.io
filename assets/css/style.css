@@ -2,18 +2,18 @@
 
 @font-face {
   font-family: "EB Garamond";
-  src: url('./assets/fonts/EBGaramond-Regular.eot?#iefix') format('embedded-opentype'),
-       url('./assets/fonts/EBGaramond-Regular.woff') format('woff'),
-       url('./assets/fonts/EBGaramond-Regular.ttf') format('truetype');
+  src: url('../fonts/EBGaramond-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/EBGaramond-Regular.woff') format('woff'),
+       url('../fonts/EBGaramond-Regular.ttf') format('truetype');
   font-display: swap;
 }
 
 @font-face {
   font-family: "EB Garamond";
   font-style: italic;
-  src: url('./assets/fonts/EBGaramond12-Italic.eot?#iefix') format('embedded-opentype'),
-       url('./assets/fonts/EBGaramond-Italic.otf') format('opentype'),
-       url('./assets/fonts/EBGaramond-Italic.ttf') format('truetype');
+  src: url('../fonts/EBGaramond12-Italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/EBGaramond-Italic.otf') format('opentype'),
+       url('../fonts/EBGaramond-Italic.ttf') format('truetype');
   font-display: swap;
 }
 
