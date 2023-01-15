@@ -1,9 +1,9 @@
- /*EB Garamond*/
+/*EB Garamond*/
 
 @font-face {
   font-family: "EB Garamond";
   src: url('../fonts/EBGaramond-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/EBGaramond-Regular.woff') format('woff'),
+       /* url('../fonts/EBGaramond-Regular.woff') format('woff'), */
        url('../fonts/EBGaramond-Regular.ttf') format('truetype');
   font-display: swap;
 }
@@ -153,7 +153,7 @@ header a:hover {
 }
 
 header h1 {
-    font-weight: 2rem;
+    /* font-weight: bold; */
     font-size: 4rem;
 }
 
