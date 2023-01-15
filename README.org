@@ -1,6 +1,8 @@
 * README
 Creating an org-site from scratch
 * Change log
+** 15th January 2023
+Moved the source files out of the folder to their own repository
 ** 28th December 2022
 Functional landing page
 ** 25th December 2022
