@@ -14,7 +14,8 @@ Redirecting to the current static page
 CLOSED: [2022-12-28 Wed 18:12]
 ** Pages
 ***  Media mentions
-*** Poetry by postcards
+*** DONE Poetry by postcards
+CLOSED: [2023-01-15 Sun 23:03]
 ** Logos
-- [ ] Check logos for social
-- [ ] Check favicon
+- [X] Check logos for social
+- [X] Check favicon

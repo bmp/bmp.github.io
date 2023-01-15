@@ -1,4 +1,0 @@
-#+TITLE: Sitemap for project content
-
-- [[file:index.org][Bharath M. Palavalli]]
-- [[file:poemsbypost.org][Poems by Post]]
