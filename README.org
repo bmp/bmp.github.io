@@ -1,6 +1,8 @@
 * README
 Creating an org-site from scratch
 * Change log
+** 1st February 2023
+Cleaned up landing page with correct social media icons
 ** 15th January 2023
 *** Moved the source files out of the folder to their own repository
 *** Added a 404 page
@@ -16,9 +18,11 @@ Redirecting to the current static page
 ** DONE Landing Page
 CLOSED: [2022-12-28 Wed 18:12]
 ** Pages
-***  Media mentions
+*** DONE Media mentions
+CLOSED: [2023-02-01 Wed 22:57]
 *** DONE Poetry by postcards
 CLOSED: [2023-01-15 Sun 23:03]
+*** List of books on Bangalore
 ** Logos
 - [X] Check logos for social
 - [X] Check favicon
