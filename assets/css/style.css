@@ -202,6 +202,30 @@ footer {
     filter: invert(12%) sepia(96%) saturate(3316%) hue-rotate(353deg) brightness(97%) contrast(100%);
 }
 
+.logo-img-20 {
+    filter: invert(12%) sepia(96%) saturate(3316%) hue-rotate(353deg) brightness(97%) contrast(100%);
+    width: 20px;
+    height: 20px;
+}
+
+.logo-img-19 {
+    filter: invert(12%) sepia(96%) saturate(3316%) hue-rotate(353deg) brightness(97%) contrast(100%);
+    width: 19px;
+    height: 19px;
+}
+
+.logo-img-18 {
+    filter: invert(12%) sepia(96%) saturate(3316%) hue-rotate(353deg) brightness(97%) contrast(100%);
+    width: 18px;
+    height: 18px;
+}
+
+.logo-img-17 {
+    filter: invert(12%) sepia(96%) saturate(3316%) hue-rotate(353deg) brightness(97%) contrast(100%);
+    width: 17px;
+    height: 17px;
+}
+
 .generator {
     margin-top: calc(var(--line-height) * 0.5rem);
     font-size: 1rem;
