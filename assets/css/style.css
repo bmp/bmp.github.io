@@ -12,14 +12,14 @@
     font-style: normal;
 }
 
-/* @font-face { */
-/*   font-family: "EB Garamond"; */
-/*   font-style: italic; */
-/*   src: url('../fonts/EBGaramond12-Italic.eot?#iefix') format('embedded-opentype'), */
-/*        url('../fonts/EBGaramond-Italic.otf') format('opentype'), */
-/*        url('../fonts/EBGaramond-Italic.ttf') format('truetype'); */
-/*   font-display: swap; */
-/* } */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  src: url('../fonts/EBGaramond12-Italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/EBGaramond-Italic.otf') format('opentype'),
+       url('../fonts/EBGaramond-Italic.ttf') format('truetype');
+  font-display: swap;
+}
 
 /* Font family support */
 html, html[data-font-family="serif"] {

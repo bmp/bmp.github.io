@@ -10,6 +10,8 @@ Cleaned up landing page with correct social media icons
 Functional landing page
 ** 25th December 2022
 Redirecting to the current static page
+** 21st July 2023
+Added minified SVG and CSV
 * Tasks
 ** Org-mode site
 - [X] Header
@@ -22,7 +24,11 @@ CLOSED: [2022-12-28 Wed 18:12]
 CLOSED: [2023-02-01 Wed 22:57]
 *** DONE Poetry by postcards
 CLOSED: [2023-01-15 Sun 23:03]
-*** List of books on Bangalore
+*** DONE List of books on Bangalore
+CLOSED: [2023-07-21 Fri 15:51]
 ** Logos
 - [X] Check logos for social
 - [X] Check favicon
+** Minified SVG and CSS
+*** DONE Version 1
+CLOSED: [2023-07-21 Fri 15:52]
