@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bharath M. Palavalli">
+    <meta name="description" content="Bharath M. Palavalli's Personal Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+    <link rel="openid.delegate" href="https://bharathpalavalli.com/">
+    <link rel="openid.server" href="https://openid.indieauth.com/openid">
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <title>Bharath M. Palavalli</title>
+    <link rel="stylesheet" href="../assets/css/twitter-archive-style.css">
+  </head>
+  <body>
+    <header>
+      <div class="site-banner">
+        <h1>
+          <a href="../../index.html">Bharath M. Palavalli</a>
+        </h1>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="flex-wrap">
+        <h1>Twitter archive for @bharathmp</h1>
+        <p>Given Twitter's recent shenanigans, this is a page where you can search many of my tweets, get a link to an archived version, and view all the content in a threaded form where applicable. This archive does not include replies to other people on Twitter, but has all my "standalone" tweets and threads.</p>
+
+        <p>This site was made with the script provided by Darius Kazemi using the <a rel="noopener" target="_blank" href="https://tinysubversions.com/twitter-archive/make-your-own">Twitter archiving tool</a>. The styling and arrangement has been suitablly modified.</p>
+
+    <div class="tweet">
+      <p id="tabs">
+        <button class="tab active" id="search-tab" onclick="searchTab()">Search</button><button class="tab" id="browse-tab" onclick="browseTab()">Browse</button>
+      </p>
+      <hr class="hr">
+      <p id="loading">Loading search...</p>
+      <div id="search" hidden>
+        <input id="search-input" type="search" />
+        <div id="sorting">Sort by: <button class="sort-button" onclick="sortResults('most-relevant')">most relevant</button> | <button class="sort-button" onclick="sortResults('oldest-first')">oldest first</button> | <button class="sort-button" onclick="sortResults('newest-first')">newest first</button> | <button class="sort-button" onclick="sortResults('most-popular')">most popular</button></div>
+        <div id="output"></div>
+      </div>
+      <div id="browse" hidden>
+        <div id="browse-sort">Sort by: <button class="sort-button-browse" onclick="sortResults('oldest-first-browse')">oldest first</button> | <button class="sort-button-browse" onclick="sortResults('newest-first-browse')">newest first</button> | <button class="sort-button" onclick="sortResults('most-popular-browse')">most popular</button></div>
+        <p id="paging">Page <input id="page-num" type="number" /> of <span id="page-total">...</span> </p>
+        <div id="browse-output"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+    <footer>
+      <a title="Twitter" href="https://twitter.com/bharathmp" target="_blank" rel="noopener"><img class="logo-img-18" src="../assets/img/twitter.min.svg" alt="Twitter Icon"></a>&nbsp;&nbsp;&nbsp;
+      <a title="LinkedIn" href="https://www.linkedin.com/in/bharathmp/" target="_blank" rel="noopener"><img class="logo-img-20" src="../assets/img/linkedin.min.svg" alt="LinkedIn Icon"></a>&nbsp;&nbsp;&nbsp;
+      <a title="Instagram" href="https://www.instagram.com/bharath.palavalli/" target="_blank" rel="noopener"><img class="logo-img-18" src="../assets/img/instagram.min.svg" alt="Instagram Icon"></a>&nbsp;&nbsp;&nbsp;
+      <a title="Mastodon" rel="me noopener" href="https://mastodon.sdf.org/@bmp" target="_blank"><img class="logo-img-17" src="../assets/img/mastodon.min.svg" alt="Mastodon Icon"></a>&nbsp;&nbsp;&nbsp;
+      <a title="Pixelfed" rel="me noopener" href="https://pixelfed.sdf.org/bmp" target="_blank"><img class="logo-img-19" src="../assets/img/pixelfed.min.svg" alt="Pixelfed Icon"></a>&nbsp;&nbsp;&nbsp;
+      <a title="XMPP" href="xmpp:bmp@jabbers.one" target="_blank" rel="noopener"><img class="logo-img-18" src="../assets/img/xmpp.min.svg" alt="XMPP Icon"></a>&nbsp;&nbsp;&nbsp;
+      <a title="Email" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#105;&#108;&#64;&#98;&#104;&#97;&#114;&#97;&#116;&#104;&#112;&#97;&#108;&#97;&#118;&#97;&#108;&#108;&#105;&#46;&#99;&#111;&#109;" target="_blank" rel="noopener"><img class="logo-img-19" src="../assets/img/mail.min.svg" alt="Email Icon"></a>
+      <br>
+      <div class="generator">
+        <a href="https://validator.w3.org/nu/?doc=https://www.bharathpalavalli.com/" target="_blank" rel="noopener">HTML5</a> | <a rel="pgpkey authn" href="./humans.txt" target="_blank">DC58C208</a>
+        <br>
+        Made with &nbsp;<a href="https://www.gnu.org/software/emacs/">Emacs</a> 30.0.50 (<a href="https://orgmode.org">Org</a> mode 9.7-pre)
+        <br>
+        © 2009-2023 Bharath M. Palavalli. Some rights reserved.
+      </div>
+    </footer>
+
+</body>
+
+<script src="searchDocuments.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.7.31/dist/flexsearch.bundle.js"></script>
+<script src="app.js"></script>
+
+</html>

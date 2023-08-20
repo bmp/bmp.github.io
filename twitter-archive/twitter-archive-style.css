@@ -1,0 +1,309 @@
+/*EB Garamond*/
+
+@font-face {
+    font-family: "EB Garamond";
+    src: url('../fonts/EBGaramond-Regular.eot?#iefix') format('embedded-opentype'),
+         /* url('../fonts/EBGaramond-Regular.woff') format('woff'), */
+         /* url('../fonts/EBGaramond-Regular.ttf') format('truetype'); */
+         url('../fonts/ebgaramond12-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ebgaramond12-regular-webfont.woff') format('woff'),
+         url('../fonts/EBGaramond-Regular.ttf') format('truetype');
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  src: url('../fonts/EBGaramond12-Italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/EBGaramond-Italic.otf') format('opentype'),
+       url('../fonts/EBGaramond-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Font family support */
+html, html[data-font-family="serif"] {
+    --font-family: "EB Garamond";
+}
+
+html[data-font-family="sans-serif"] {
+    --font-family: sans-serif;
+}
+html[data-font-family="monospace"] {
+    --font-family: monospace;
+}
+
+:root {
+    --column-width: 67ch;
+    --form-width: 50ch;
+    --line-width: 0.125rem;
+    --line-height: 1.75;
+
+    --one-line: calc(var(--line-height) * 1rem);
+    --half-line: calc(var(--one-line) * 0.5);
+
+    font-family: var(--font-family);
+}
+
+/**********TAG SELECTORS**********/
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+  font-family: "EB Garamond";
+  font-size: 1.2em;
+}
+
+
+header {
+    margin-bottom: calc(var(--line-height) * 1.5rem);
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h1 {
+    color: #a70f0f;
+    font-size: 4rem;
+    line-height: calc(var(--line-height) * 2rem);
+}
+
+footer {
+    margin-top: calc(var(--line-height) * 1.5rem);
+    font-size: 1.5rem;
+    line-height: calc(var(--line-height) * 0.75rem);
+}
+
+.generator {
+    margin-top: calc(var(--line-height) * 0.5rem);
+    font-size: 1rem;
+}
+
+h1, h2 {
+    color: #a70f0f;
+        line-height: calc(var(--line-height) * 1.5rem);
+    font-size: 3rem;
+}
+
+h3, h4, h5, h6 {
+    font-size: 2rem;
+    line-height: var(--one-line);
+    padding-top: calc(var(--line-height) * 0.75rem);
+    margin-bottom: calc(var(--line-height) * 0.25rem);
+}
+
+
+
+#search-input {
+  font-size: 1.5em;
+  width: 100%;
+}
+.search_time {
+  margin-top: 4px;
+}
+.search_text {
+  display: inline;
+}
+.search_link {
+  display: inline;
+}
+#sorting {
+  margin-top: 8px;
+  line-height: 1.2em;
+}
+.sort-button {
+  font-size: 1.0em;
+}
+.wrapper {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+.flex-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.tweet {
+    background-color: #e8e8e8;
+    max-width: 600px;
+    padding: 16px;
+    font-family: "EB Garamond";
+    font-size: 1em;
+    border: 2px solid #555;
+    border-radius: 16px;
+}
+.tweet img {
+  max-height: 100%;
+  vertical-align: bottom;
+  width: 100%;
+  object-fit: cover;
+}
+.tweet video {
+  max-height: 100%;
+  vertical-align: bottom;
+  width: 100%;
+}
+.tweet ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 8px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.tweet li {
+  height: 20vh;
+  width: 20vh;
+  flex-grow: 1;
+}
+.tweet .display_name {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.tweet .user_name {
+  margin-top: 4px;
+}
+.tweet .favorite_count {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.tweet .retweet_count {
+  display: inline-block;
+  margin-left: 16px;
+  margin-bottom: 0;
+}
+.tweet .created_at {
+  margin-bottom: 0;
+}
+.tweet .permalink {
+  margin-left: 16px;
+}
+.child {
+  margin-top: 16px;
+  margin-left: 64px;
+  max-width: calc(600px - 64px);
+  background-color: #e8e8e8;
+}
+.parent {
+  margin-bottom: 16px;
+  margin-right: 64px;
+  max-width: calc(600px - 64px);
+  background-color: #e8e8e8;
+}
+@media screen and (max-width: 599px) {
+  .tweet li {
+    height: 15vh;
+    width: 15vh;
+    flex-grow: 1;
+  }
+}
+@media(prefers-color-scheme: dark) {
+  body {
+    background-color: #e8e8e8;
+    color: #555;
+  }
+  a {
+    color: #a70f0f;
+    text-decoration: none;
+    transition: color .1s ease-in,background .1s ease-in;
+  }
+  a:hover {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+  }
+  .tweet {
+    background-color: #e8e8e8;
+    border: 1px solid gray; /*#33ff00;*/
+    border-radius: 5px;
+  }
+  .child {
+    background-color: #e8e8e8;
+  }
+  .parent {
+    background-color: #555;
+  }
+  button {
+    background-color: #d1cfcf;
+    color: #555;
+  }
+  input {
+    background-color: #d1cfcf;
+    color: #555;
+  }
+  .tweet .favorite_count {
+    color: #a70f0f;
+  }
+  .tweet .retweet_count {
+    color: #a70f0f;
+  }
+  .tweet .created_at {
+    color: #a70f0f;
+  }
+}
+#tabs {
+  margin: -16px 0 0;
+}
+.tab:first-child {
+  margin-left: -16px;
+  border-top-left-radius: 16px;
+}
+.hr {
+  margin: 0 -16px 16px -16px;
+}
+.tab {
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-right: 2px solid #555;
+  box-sizing: border-box;
+}
+.tab.active {
+  text-decoration: underline;
+}
+#browse-sort > button {
+  font-size: 1.0em;
+}
+#page-num {
+  font-size: 1.0em;
+  width: 80px;
+}
+#browse-sort {
+  line-height: 1.7em;
+}
+#paging {
+  margin: 8px 0;
+}
+
+.logo-img {
+    filter: invert(12%) sepia(96%) saturate(3316%) hue-rotate(353deg) brightness(97%) contrast(100%);
+}
+
+.logo-img-20 {
+    filter: invert(12%) sepia(96%) saturate(3316%) hue-rotate(353deg) brightness(97%) contrast(100%);
+    width: 20px;
+    height: 20px;
+}
+
+.logo-img-19 {
+    filter: invert(12%) sepia(96%) saturate(3316%) hue-rotate(353deg) brightness(97%) contrast(100%);
+    width: 19px;
+    height: 19px;
+}
+
+.logo-img-18 {
+    filter: invert(12%) sepia(96%) saturate(3316%) hue-rotate(353deg) brightness(97%) contrast(100%);
+    width: 18px;
+    height: 18px;
+}
+
+.logo-img-17 {
+    filter: invert(12%) sepia(96%) saturate(3316%) hue-rotate(353deg) brightness(97%) contrast(100%);
+    width: 17px;
+    height: 17px;
+}
