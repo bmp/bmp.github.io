@@ -12,11 +12,13 @@ Functional landing page
 Redirecting to the current static page
 ** 21st July 2023
 Added minified SVG and CSV
+** 1st January 2024
+Updated the year in the footer
 * Tasks
 ** Org-mode site
 - [X] Header
 - [X] Footer
-- [ ] RSS Feeds
+- +[ ] RSS Feeds+
 ** DONE Landing Page
 CLOSED: [2022-12-28 Wed 18:12]
 ** Pages
