@@ -76,7 +76,7 @@ a:hover {
     border-bottom: 1px dotted;
 }
 
-header, footer, h1, h2 {
+header, footer, h1 {
     text-align: center;
 }
 
@@ -161,7 +161,7 @@ header h1 {
     line-height: calc(var(--line-height) * 2rem);
 }
 
-h1, h2 {
+h1 {
     line-height: calc(var(--line-height) * 1.5rem);
     font-size: 3rem;
 }
@@ -172,14 +172,14 @@ h1.title {
     color: #555;
 }
 
-h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     font-size: 2rem;
     line-height: var(--one-line);
     padding-top: calc(var(--line-height) * 0.75rem);
     margin-bottom: calc(var(--line-height) * 0.25rem);
 }
 
-:is(h3, h4, h5, h6) ~ * {
+:is(h2, h3, h4, h5, h6) ~ * {
     margin-top: 0;
 }
 
