@@ -9,3 +9,4 @@
 
 # Org mode fold structures
 *.org.fold
+*.fold
